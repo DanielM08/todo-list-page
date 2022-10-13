@@ -18,6 +18,7 @@
   line-height: 1.4;
   box-sizing: border-box;
   overflow: hidden;
+  color: var(--gray-100);
 }
 
 .addTaskForm button {
@@ -36,6 +37,11 @@
 
 .addTaskForm button[type=submit]:hover {
   background: var(--blue-100);
+}
+
+.addTaskForm button[type=submit]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .taskList {
